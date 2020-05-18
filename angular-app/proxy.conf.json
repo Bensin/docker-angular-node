@@ -1,0 +1,6 @@
+{
+    "/api/*" :{
+        "targe": "http://localhost:3000",
+        "secure": false
+    }
+}
