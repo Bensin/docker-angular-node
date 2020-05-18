@@ -1,9 +1,9 @@
 FROM node as build-stage
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY package.json .
 RUN npm install
 COPY . . 
-RUN npm run build
+RUN npm run build --prod
 
 #stage 2
 FROM nginx as production-state
