@@ -1,6 +1,6 @@
 FROM node:14.2.0-alpine3.10 as build-stage
 WORKDIR /usr/src/app
-COPY package.json
+COPY package.json .
 RUN npm install
 COPY . . 
 RUN npm build
