@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 COPY package.json .
 RUN npm install
 COPY . . 
-RUN npm build
+RUN npm run build
 
 #stage 2
 FROM nginx:alpine as production-state
