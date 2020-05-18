@@ -11,7 +11,7 @@ app.use(cors());
 app.get('/api/getData',(req, res) =>{
     res.json({
         "statusCode":200,
-       "dataRes":"data from node api server"
+       "dataRes":"node api server"
     });
 });
 
