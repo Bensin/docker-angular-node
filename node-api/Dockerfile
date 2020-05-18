@@ -1,4 +1,4 @@
-FROM node:14.2.0-alpine3.10 as node-server
+FROM node as node-server
 WORKDIR /usr/src/app
 COPY package.json .
 RUN npm install 
